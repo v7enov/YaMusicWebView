@@ -35,7 +35,7 @@ namespace YaMusicWebView
             if (!File.Exists(ConfigFilePath))
                 SetDefaultBindings();
             else
-                WinCodeActions = deserializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(ConfigFilePath));p
+                WinCodeActions = deserializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(ConfigFilePath));
             
 
             WebView.Source = new Uri("https://music.yandex.ru/");
